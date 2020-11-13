@@ -1,0 +1,37 @@
+<div>
+  <label for="title">Title</label>
+  <input type="text" id="title"
+         required [(ngModel)]="title" name="title">
+
+  <label for="content">Content</label>
+  <input type="text" class="form-control" id="content" [(ngModel)]="content" name="content">
+
+  <label for="type">Type</label>
+  <select name="type" id="type" [(ngModel)]="type">
+    <option value="success">SUCCESS</option>
+    <option value="error">ERROR</option>
+  </select>
+
+  <label for="delay">delay</label>
+  <input type="number" class="form-control" id="delay" [(ngModel)]="delay" name="delay">
+
+
+  <label for="display-delay">Show delay</label>
+  <input type="checkbox" class="form-control" id="display-delay" [(ngModel)]="displayDelay"
+         name="displayDelay">
+
+  <label for="top">Vertical</label>
+  <select name="top" id="top" [(ngModel)]="vertical" required>
+    <option value="top">TOP</option>
+    <option value="center">CENTER</option>
+    <option value="bottom">BOTTOM</option>
+  </select>
+
+  <label for="left">Horizontal</label>
+  <select name="left" id="left" [(ngModel)]="horizontal" required>
+    <option value="top">TOP</option>
+    <option value="center">CENTER</option>
+    <option value="bottom">BOTTOM</option>
+  </select>
+  <button type="submit" (click)="onSubmit()">Submit</button>
+</div>

@@ -1,0 +1,6 @@
+<div class="toast toast-{{toast.type}}" [style.bottom.px]="ind*130">
+  <p class="toast-text">{{toast.title}}</p>
+  <p class="toast-text">{{toast.content}}</p>
+  <p class="toast-text">{{toast.delay}}</p>
+  <a class="close" (click)="remove.emit(ind)">&times;</a>
+</div>
